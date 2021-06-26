@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Cloudiway</title>
+
+	<meta name="description" content="">
+
+	<!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="user-scalable=1, width=device-width">
+
+	<!-- Turn off "smart" recognition phone number -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Style sheet link -->
+	<link type="text/css" href="css/main.css" rel="stylesheet" media="all">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+	<body>
+		<header class="header">
+		  <div class="header__inner">
+		    <div class="header__left-block">
+		      <button class="header__sidebar-toggle-btn sidebar-toggle-btn">
+		        <span class="sidebar-toggle-btn__icon"></span>
+		      </button>
+		      <div class="header__logo header__logo--margin">
+		        <a href="#">
+		          <img src="img/logo.png" alt="Logo">
+		        </a>
+		      </div>
+		    </div>
+		    <div class="header__user-block header__user-block--right-sided user-block">
+		      <div class="user-block__user-links user-links">
+		        <a href="#" class="user-links__item">Buy</a>
+		        <a href="#" class="user-links__item user-links__item--left-margin">Help</a>
+		      </div>
+		      <div class="user-block__notification user-block__notification--left-margin notification">
+		        <a href="#" class="notification__item notification__item--has-notifications">
+		          <img src="img/bell-icon.svg" alt="Notification">
+		        </a>
+		      </div>
+		      <div class="user-block__settings user-block__settings--left-margin">
+		        <a href="#">
+		          <img src="img/settings-icon.svg" alt="Settings">
+		        </a>
+		      </div>
+		      <a href="#" class="user-block__user-info user-block__user-info--left-margin user-info">
+		        <img class="user-info__avatar" src="img/avatar.png" alt="User Avatar">
+		        <div class="user-info__user-name user-info__user-name--left-margin user-name">
+		          <span class="user-name__item">Ross Thornell <i class="fas fa-angle-down"></i></span>
+		        </div>
+		      </a>
+		    </div>
+		  </div>
+		</header>
+
+		<div class="content-wrap">
+			<div class="sidebar">
+			  <ul class="sidebar__navigation sb-navigation">
+			    <li class="sb-navigation__item">
+			      <a href="#" class="sb-navigation__link sb-navigation__link--active">
+			        <img src="img/project-selector-icon.png" alt="icon" class="sb-navigation__icon">
+			        Project Selector
+			      </a>
+			    </li>
+			    <li class="sb-navigation__item">
+			      <a href="#" class="sb-navigation__link">
+			        <img src="img/actions-icon.png" alt="icon" class="sb-navigation__icon">
+			        Actions
+			        </a>
+			    </li>
+			    <li class="sb-navigation__item">
+			      <a href="#" class="sb-navigation__link">
+			        <img src="img/galsync-data-icon.png" alt="icon" class="sb-navigation__icon">
+			        Galsync Data
+			      </a>
+			    </li>
+			    <li class="sb-navigation__item">
+			      <a href="#" class="sb-navigation__link">
+			        <img src="img/history-icon.png" alt="icon" class="sb-navigation__icon">
+			        History
+			      </a>
+			    </li>
+			    <li class="sb-navigation__item">
+			      <a href="#" class="sb-navigation__link">
+			        <img src="img/configuration-icon.png" alt="icon" class="sb-navigation__icon">
+			        Configuration
+			      </a>
+			    </li>
+			  </ul>
+			
+			  <footer class="footer footer--padding">
+			  	<span class="footer__text">Copyright © 2018 Cloudiway.</span>
+			  	<span class="footer__text">All Rights Reserved.</span>
+			  
+			  	<div class="all_pages">
+			  		<div class="page_point">Pages</div>
+			  		<ul class="page_list">
+			  			<li><a href="index.html">Index</a></li>
+			  			<li><a href="project-selector.html">Project Selector</a></li>
+			  			<li><a href="project-create-new.html">Project Create New</a></li>
+			  			<li><a href="config.html">Config</a></li>
+			  			<li><a href="config-account.html">Config Account</a></li>
+			  			<li><a href="config-add-new-connector.html">Config Add New Connector</a></li>
+			  			<li><a href="history.html">History</a></li>
+			  			<li><a href="history-job-information.html">History Job Information</a></li>
+			  			<li><a href="history-job-detailed.html">History Job Detailed</a></li>
+			  			<li><a href="view-simulation.html">View Simulation</a></li>
+			  			<li><a href="galsync-data.html">Galsync Data</a></li>
+			  			<li><a href="actions.html">Actions</a></li>
+			  			<li><a href="config-account-settings.html">Config Account Setting</a></li>
+			  			<li><a href="config-add-filters.html">Config Add filters</a></li>
+			  		</ul>
+			  	</div>
+			  </footer>
+			</div>
+			<div class="content">
+				<div class="message-box hidden">
+					<button class="message-box__close-button button"><i class="fas fa-times"></i></button>
+					<span class="message-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus aliquet dignissim. Etiam luctus porta diam, eu tristique massa dignissim nec.</span>
+					<button class="message-box__confirm-button button">Confirm</button>
+				</div>
+				<div class="content__inner">
+					<div class="page-info">
+						<div class="page-info__title">Configuration</div>
+						<div class="page-info__breadcrumbs breadcrumbs">
+							<a href="#" class="breadcrumbs__item">Home</a>
+							<i class="fas fa-angle-right breadcrumbs__item breadcrumbs__icon"></i>
+							<a href="#" class="breadcrumbs__item">Configuration</a>
+						</div>
+					</div>
+
+					<div class="page-subtitle page-subtitle-with-icon connectors-toggle">
+						<img src="img/gear-icon.png" alt="Icon" class="page-subtitle__icon">
+						<span class="page-subtitle__text">Connectors</span>
+						<button class="button connectors-toggle-btn"><i class="fas fa-angle-down connectors-toggle__icon"></i></button>
+					</div>
+
+					<div class="configuration-connectors-block configuration-connectors-block--reduced">
+						<table class="table configuration-table">
+							<thead class="table__header">
+								<tr>
+									<th class="table__heading table-heading">
+										<a href="#" class="table-heading__link">
+											<i class="fas fa-filter table-heading__icon icon-filter"></i>
+											<span class="table-heading__text">Type</span>
+											<i class="fas fa-sort-alpha-down table-heading__icon"></i>
+										</a>
+									</th>
+									<th class="table__heading table-heading">
+										<a href="#" class="table-heading__link">
+											<span class="table-heading__text">Name</span>
+											<i class="fas fa-exchange-alt table-heading__icon"></i>
+										</a>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="table__content table-content">
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Lorem Ipsum</td>
+									<td data-label="Name" class="table-content__item">Lorem Ipsum</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Ut in tellus</td>
+									<td data-label="Name" class="table-content__item">Ut in tellus</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Phasellus diam nunc</td>
+									<td data-label="Name" class="table-content__item">Phasellus diam nunc</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Mauris finibus</td>
+									<td data-label="Name" class="table-content__item">Mauris finibus</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Diam nunc</td>
+									<td data-label="Name" class="table-content__item">Diam nunc</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Lorem Ipsum</td>
+									<td data-label="Name" class="table-content__item">Lorem Ipsum</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Ut in tellus</td>
+									<td data-label="Name" class="table-content__item">Ut in tellus</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Phasellus diam nunc</td>
+									<td data-label="Name" class="table-content__item">Phasellus diam nunc</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Mauris finibus</td>
+									<td data-label="Name" class="table-content__item">Mauris finibus</td>
+								</tr>
+								<tr class="table-content__row">
+									<td data-label="Type" class="table-content__item">Diam nunc</td>
+									<td data-label="Name" class="table-content__item">Diam nunc</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="page-navigation configuration__page-navigation">
+							<button class="button blue-btn new-connector-btn">New</button>
+							<div class="page-navigation__showed-results">
+								Showing 1 to 10 of 57 entries
+							</div>
+							<ul class="page-navigation__navigation-links navigation-links">
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__link--inactive navigation-links__previous">Previous</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__link--active navigation-links__page-number">1</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__page-number">2</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__page-number">3</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__page-number">4</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__page-number">5</a>
+								</li>
+								<li class="navigation-links__item">
+									<a href="#" class="navigation-links__link navigation-links__next">Next</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+          <div class="box-container account-settings-box">
+            <div class="page-subtitle page-subtitle-with-icon account-settings-box__title">
+              <img src="img/gear-icon.png" alt="Icon" class="page-subtitle__icon">
+              <span class="page-subtitle__text">Lab Office</span>
+            </div>
+
+            <div class="account-settings-box__navigation settings-navigation">
+              <div class="settings-navigation__item settings-navigation__item--active">
+                1
+                <span class="settings-navigation__text">Common Data</span>
+              </div>
+              <div class="settings-navigation__divier"></div>
+              <div class="settings-navigation__item">
+                2
+                <span class="settings-navigation__text">Pulling Filters</span>
+              </div>
+              <div class="settings-navigation__divier"></div>
+              <div class="settings-navigation__item">
+                3
+                <span class="settings-navigation__text">Additional Script</span>
+              </div>
+              <div class="settings-navigation__divier"></div>
+              <div class="settings-navigation__item">
+                4
+                <span class="settings-navigation__text">End: Summary</span>
+              </div>
+            </div>
+
+            <form class="account-settings-box__form account-settings-form">
+              <div class="account-settings-form__title">Account Settings</div>
+              <div class="account-settings-form__row">
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Tenant Name</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Rest Clien ID</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Rest Clien Secret</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+              </div>
+              <div class="account-settings-form__row">
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Domain Name</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Admin Email</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Admin Password</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+              </div>
+              <div class="account-settings-form__row">
+                <div class="account-settings-form__item">
+                  <div class="account-settings-form__subtitle">Server Region</div>
+                  <input type="text" class="input account-settings-form__input">
+                </div>
+              </div>
+
+              <button class="button blue-btn account-settings-form__next-btn">Next</button>
+            </form>
+          </div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

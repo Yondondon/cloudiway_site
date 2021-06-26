@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Cloudiway</title>
+
+	<meta name="description" content="">
+
+	<!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="user-scalable=1, width=device-width">
+
+	<!-- Turn off "smart" recognition phone number -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Style sheet link -->
+	<link type="text/css" href="css/main.css" rel="stylesheet" media="all">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+	  <div class="header__inner">
+	    <div class="header__left-block">
+	      <button class="header__sidebar-toggle-btn sidebar-toggle-btn">
+	        <span class="sidebar-toggle-btn__icon"></span>
+	      </button>
+	      <div class="header__logo header__logo--margin">
+	        <a href="#">
+	          <img src="img/logo.png" alt="Logo">
+	        </a>
+	      </div>
+	    </div>
+	    <div class="header__user-block header__user-block--right-sided user-block">
+	      <div class="user-block__user-links user-links">
+	        <a href="#" class="user-links__item">Buy</a>
+	        <a href="#" class="user-links__item user-links__item--left-margin">Help</a>
+	      </div>
+	      <div class="user-block__notification user-block__notification--left-margin notification">
+	        <a href="#" class="notification__item notification__item--has-notifications">
+	          <img src="img/bell-icon.svg" alt="Notification">
+	        </a>
+	      </div>
+	      <div class="user-block__settings user-block__settings--left-margin">
+	        <a href="#">
+	          <img src="img/settings-icon.svg" alt="Settings">
+	        </a>
+	      </div>
+	      <a href="#" class="user-block__user-info user-block__user-info--left-margin user-info">
+	        <img class="user-info__avatar" src="img/avatar.png" alt="User Avatar">
+	        <div class="user-info__user-name user-info__user-name--left-margin user-name">
+	          <span class="user-name__item">Ross Thornell <i class="fas fa-angle-down"></i></span>
+	        </div>
+	      </a>
+	    </div>
+	  </div>
+	</header>
+
+	<div class="content-wrap">
+		<div class="sidebar">
+		  <ul class="sidebar__navigation sb-navigation">
+		    <li class="sb-navigation__item">
+		      <a href="#" class="sb-navigation__link sb-navigation__link--active">
+		        <img src="img/project-selector-icon.png" alt="icon" class="sb-navigation__icon">
+		        Project Selector
+		      </a>
+		    </li>
+		    <li class="sb-navigation__item">
+		      <a href="#" class="sb-navigation__link">
+		        <img src="img/actions-icon.png" alt="icon" class="sb-navigation__icon">
+		        Actions
+		        </a>
+		    </li>
+		    <li class="sb-navigation__item">
+		      <a href="#" class="sb-navigation__link">
+		        <img src="img/galsync-data-icon.png" alt="icon" class="sb-navigation__icon">
+		        Galsync Data
+		      </a>
+		    </li>
+		    <li class="sb-navigation__item">
+		      <a href="#" class="sb-navigation__link">
+		        <img src="img/history-icon.png" alt="icon" class="sb-navigation__icon">
+		        History
+		      </a>
+		    </li>
+		    <li class="sb-navigation__item">
+		      <a href="#" class="sb-navigation__link">
+		        <img src="img/configuration-icon.png" alt="icon" class="sb-navigation__icon">
+		        Configuration
+		      </a>
+		    </li>
+		  </ul>
+		
+		  <footer class="footer footer--padding">
+		  	<span class="footer__text">Copyright © 2018 Cloudiway.</span>
+		  	<span class="footer__text">All Rights Reserved.</span>
+		  
+		  	<div class="all_pages">
+		  		<div class="page_point">Pages</div>
+		  		<ul class="page_list">
+		  			<li><a href="index.html">Index</a></li>
+		  			<li><a href="project-selector.html">Project Selector</a></li>
+		  			<li><a href="project-create-new.html">Project Create New</a></li>
+		  			<li><a href="config.html">Config</a></li>
+		  			<li><a href="config-account.html">Config Account</a></li>
+		  			<li><a href="config-add-new-connector.html">Config Add New Connector</a></li>
+		  			<li><a href="history.html">History</a></li>
+		  			<li><a href="history-job-information.html">History Job Information</a></li>
+		  			<li><a href="history-job-detailed.html">History Job Detailed</a></li>
+		  			<li><a href="view-simulation.html">View Simulation</a></li>
+		  			<li><a href="galsync-data.html">Galsync Data</a></li>
+		  			<li><a href="actions.html">Actions</a></li>
+		  			<li><a href="config-account-settings.html">Config Account Setting</a></li>
+		  			<li><a href="config-add-filters.html">Config Add filters</a></li>
+		  		</ul>
+		  	</div>
+		  </footer>
+		</div>
+		<div class="content">
+			<div class="message-box">
+				<button class="message-box__close-button button"><i class="fas fa-times"></i></button>
+				<span class="message-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus aliquet dignissim. Etiam luctus porta diam, eu tristique massa dignissim nec.</span>
+				<button class="message-box__confirm-button button">Confirm</button>
+			</div>
+			<div class="content__inner">
+				<div class="page-info home-page">
+					<div class="page-info__title">Home Page</div>
+					<div class="page-info__breadcrumbs breadcrumbs">
+						<a href="#" class="breadcrumbs__item">Home</a>
+						<i class="fas fa-angle-right breadcrumbs__item breadcrumbs__icon"></i>
+						<a href="#" class="breadcrumbs__item">Dashboard</a>
+					</div>
+				</div>
+				<div class="page-info">
+					<div class="page-info__details">
+						Details
+						<button class="page-info__edit-button button edit-button"></button>
+					</div>
+					<div class="page-info__role-text">Role: <strong class="page-info__role">Client</strong></div>
+				</div>
+
+				<div class="statistics-with-icons">
+					<div class="statistics-with-icons__licences licences">
+						<span class="licences__text">Available Licences</span>
+						<span class="licences__numbers">125 647</span>
+					</div>
+					<ul class="statistics-with-icons__list statistics-list">
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/mail-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">12 598</span>
+								<span class="statistics-list__text">Mails</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/file-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">20 897</span>
+								<span class="statistics-list__text">Files</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/sites-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">25 565</span>
+								<span class="statistics-list__text">Sites</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/groups-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">16 564</span>
+								<span class="statistics-list__text">Groups</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/iam-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">15 256</span>
+								<span class="statistics-list__text">Iam</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/mail-routing-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">20 258</span>
+								<span class="statistics-list__text">Mail Routing</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/free-busy-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">9 225</span>
+								<span class="statistics-list__text">Free/Busy</span>
+							</a>
+						</li>
+						<li class="statistics-list__item">
+							<a href="#" class="statistics-list__link">
+								<img src="img/data-icon.png" alt="Icon" class="statistics-list__icon">
+								<span class="statistics-list__numbers">22 025 <small>TB</small></span>
+								<span class="statistics-list__text">Data package</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="project-list">
+					<div class="project-list__header">
+						<div class="project-list__title">Project List</div>
+						<button class="project-list__add-new-project button blue-btn">Add new project</button>
+					</div>
+					<table class="project-list__table projects-table">
+						<thead class="table__header projects-table__header">
+							<tr>
+								<th class="projects-table__heading table-heading">
+									<a href="#" class="table-heading__link">
+										<i class="fas fa-filter table-heading__icon icon-filter"></i>
+										<span class="table-heading__text">Project name</span>
+										<i class="fas fa-sort-alpha-down table-heading__icon"></i>
+									</a>
+								</th>
+								<th class="projects-table__heading table-heading">
+									<a href="#" class="table-heading__link">
+										<span class="table-heading__text">Role</span>
+										<i class="fas fa-exchange-alt table-heading__icon"></i>
+									</a>
+								</th>
+								<th class="projects-table__heading table-heading">
+									<a href="#" class="table-heading__link">
+										<span class="table-heading__text">Creation date</span>
+										<i class="fas fa-sort-alpha-down table-heading__icon"></i>
+									</a>
+								</th>
+								<th class="projects-table__heading table-heading">
+									<a href="#" class="table-heading__link">
+										<span class="table-heading__text">Available services</span>
+										<i class="fas fa-sort-alpha-down table-heading__icon"></i>
+									</a>
+								</th>
+							</tr>
+						</thead>
+						<tbody class="projects-table__body table-content">
+							<!-- Table row 1 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Project POC
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Administrator</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/30/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 2 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Coexistence
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/25/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 3 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Coexistence
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Viewer</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/25/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 4 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/25/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 5 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">03/27/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 6 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">03/27/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 7 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Coexistence
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Viewer</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/25/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							
+							<!-- Table row 8 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">04/25/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 9 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">03/27/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+							<!-- Table row 10 -->
+							<tr class="table-content__row">
+								<td data-label='Project name' class="table-content__item table-content__item--semibold-text" style="width: 30%;">
+									Migration
+									<button class="table-content__edit-button button edit-button"></button>
+								</td>
+								<td data-label='Role' class="table-content__item" style="width: 25%;">Contributor</td>
+								<td data-label='Creation date' class="table-content__item" style="width: 20%;">03/27/2019</td>
+								<td data-label='Available services' class="table-content__item" style="width: 25%;">
+									<a href="#" class="table-content__service-link">
+										<img src="img/mail-icon2.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/sync-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/copy-icon.png" alt="Icon">
+									</a>
+									<a href="#" class="table-content__service-link">
+										<img src="img/address-book-icon.png" alt="Icon">
+									</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+					<div class="project-list__navigation page-navigation">
+						<div class="page-navigation__showed-results">
+							Showing 1 to 10 of 57 entries
+						</div>
+						<ul class="page-navigation__navigation-links navigation-links">
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__link--inactive navigation-links__previous">Previous</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__link--active navigation-links__page-number">1</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__page-number">2</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__page-number">3</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__page-number">4</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__page-number">5</a>
+							</li>
+							<li class="navigation-links__item">
+								<a href="#" class="navigation-links__link navigation-links__next">Next</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>

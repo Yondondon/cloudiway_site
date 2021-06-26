@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Cloudiway</title>
+
+	<meta name="description" content="">
+
+	<!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="user-scalable=1, width=device-width">
+
+	<!-- Turn off "smart" recognition phone number -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Style sheet link -->
+	<link type="text/css" href="css/main.css" rel="stylesheet" media="all">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__left-block">
+          <button class="header__sidebar-toggle-btn sidebar-toggle-btn">
+            <span class="sidebar-toggle-btn__icon"></span>
+          </button>
+          <div class="header__logo header__logo--margin">
+            <a href="#">
+              <img src="img/logo.png" alt="Logo">
+            </a>
+          </div>
+        </div>
+        <div class="header__user-block header__user-block--right-sided user-block">
+          <div class="user-block__user-links user-links">
+            <a href="#" class="user-links__item">Buy</a>
+            <a href="#" class="user-links__item user-links__item--left-margin">Help</a>
+          </div>
+          <div class="user-block__notification user-block__notification--left-margin notification">
+            <a href="#" class="notification__item notification__item--has-notifications">
+              <img src="img/bell-icon.svg" alt="Notification">
+            </a>
+          </div>
+          <div class="user-block__settings user-block__settings--left-margin">
+            <a href="#">
+              <img src="img/settings-icon.svg" alt="Settings">
+            </a>
+          </div>
+          <a href="#" class="user-block__user-info user-block__user-info--left-margin user-info">
+            <img class="user-info__avatar" src="img/avatar.png" alt="User Avatar">
+            <div class="user-info__user-name user-info__user-name--left-margin user-name">
+              <span class="user-name__item">Ross Thornell <i class="fas fa-angle-down"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div class="sidebar">
+        <ul class="sidebar__navigation sb-navigation">
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link sb-navigation__link--active">
+              <img src="img/project-selector-icon.png" alt="icon" class="sb-navigation__icon">
+              Project Selector
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/actions-icon.png" alt="icon" class="sb-navigation__icon">
+              Actions
+              </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/galsync-data-icon.png" alt="icon" class="sb-navigation__icon">
+              Galsync Data
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/history-icon.png" alt="icon" class="sb-navigation__icon">
+              History
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/configuration-icon.png" alt="icon" class="sb-navigation__icon">
+              Configuration
+            </a>
+          </li>
+        </ul>
+      
+        <footer class="footer footer--padding">
+        	<span class="footer__text">Copyright © 2018 Cloudiway.</span>
+        	<span class="footer__text">All Rights Reserved.</span>
+        
+        	<div class="all_pages">
+        		<div class="page_point">Pages</div>
+        		<ul class="page_list">
+        			<li><a href="index.html">Index</a></li>
+        			<li><a href="project-selector.html">Project Selector</a></li>
+        			<li><a href="project-create-new.html">Project Create New</a></li>
+        			<li><a href="config.html">Config</a></li>
+        			<li><a href="config-account.html">Config Account</a></li>
+        			<li><a href="config-add-new-connector.html">Config Add New Connector</a></li>
+        			<li><a href="history.html">History</a></li>
+        			<li><a href="history-job-information.html">History Job Information</a></li>
+        			<li><a href="history-job-detailed.html">History Job Detailed</a></li>
+        			<li><a href="view-simulation.html">View Simulation</a></li>
+        			<li><a href="galsync-data.html">Galsync Data</a></li>
+        			<li><a href="actions.html">Actions</a></li>
+        			<li><a href="config-account-settings.html">Config Account Setting</a></li>
+        			<li><a href="config-add-filters.html">Config Add filters</a></li>
+        		</ul>
+        	</div>
+        </footer>
+      </div>
+      <div class="content">
+        <div class="message-box hidden">
+          <button class="message-box__close-button button"><i class="fas fa-times"></i></button>
+          <span class="message-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus aliquet dignissim. Etiam luctus porta diam, eu tristique massa dignissim nec.</span>
+          <button class="message-box__confirm-button button">Confirm</button>
+        </div>
+        <div class="content__inner">
+          <div class="page-info">
+            <div class="page-info__title">Actions</div>
+            <div class="page-info__breadcrumbs breadcrumbs">
+              <a href="#" class="breadcrumbs__item">Home</a>
+              <i class="fas fa-angle-right breadcrumbs__item breadcrumbs__icon"></i>
+              <a href="#" class="breadcrumbs__item">Actions</a>
+            </div>
+          </div>
+
+          <div class="actions-page-box-blocks">
+            <div class="box-container actions-configuration actions-page-box-blocks__item">
+              <div class="project-box__header actions-configuration__header">
+                <img src="img/gear-icon.png" alt="Icon">
+                <div class="project-box__title your-projects-box__title">Configuration</div>
+              </div>
+              <div class="actions-configuration__select-item">
+                <div class="project-box__label project-box__select-projects-label">Source</div>
+                <select name="Select Projects" id="actions-configuration-select-source" class="project-box__select-projects select-projects custom-select">
+                  <option value="Lab Google 1">Lab Google 1</option>
+                  <option value="Lab Google 2">Lab Google 2</option>
+                </select>
+              </div>
+              <div class="actions-configuration__select-item ">
+                <div class="project-box__label project-box__select-projects-label">Targets</div>
+                <select name="Select Projects" id="actions-configuration-select-targets" class="project-box__select-projects select-projects custom-select">
+                  <option value="Lab Google 1">Lab Google 1</option>
+                  <option value="Lab Google 2">Lab Google 2</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="box-container manual-run actions-page-box-blocks__item">
+              <div class="project-box__header actions-configuration__header">
+                <img src="img/manual-run-icon.png" alt="Icon">
+                <div class="project-box__title your-projects-box__title">Manual Run</div>
+              </div>
+              <div class="manual-run__controls">
+                <select name="Select Projects" id="manual-run-synchronize" class="dropdown-select custom-select manual-run-synchronize-select">
+                  <option value="">Synchronize</option>
+                  <option value="">Lab Google 2</option>
+                </select>
+                <select name="Select Projects" id="manual-run-gather" class="dropdown-select custom-select manual-run-gather-select">
+                  <option value="">Gather</option>
+                  <option value="">Lab Google 2</option>
+                </select>
+                <button class="button blue-btn manual-run-simulate">Simulate</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="page-subtitle page-subtitle-with-icon actions-page">
+            <img src="img/automatic-run-icon.png" alt="Icon" class="page-subtitle__icon">
+            <span class="page-subtitle__text">Automatic Run</span>
+            <button class="button switch-btn switch-btn--off page-subtitle__switch-btn">
+              <span class="switch-btn__circle"></span>
+            </button>
+            <div class="add-repetition-block">
+              <input type="text" class="add-repetition-block__input input">
+              <button class="button add-repetition-block__add-btn">add</button>
+            </div>
+          </div>
+
+          <table class="table galsync-data-table">
+            <thead class="table__header">
+              <tr>
+                <th class="table__heading table-heading">
+                  <a href="#" class="table-heading__link">
+                    <i class="fas fa-filter table-heading__icon icon-filter"></i>
+                    <span class="table-heading__text">Source Name</span>
+                    <i class="fas fa-sort-alpha-down table-heading__icon"></i>
+                  </a>
+                </th>
+                <th class="table__heading table-heading">
+                  <a href="#" class="table-heading__link">
+                    <span class="table-heading__text">Target Name</span>
+                    <i class="fas fa-exchange-alt table-heading__icon"></i>
+                  </a>
+                </th>
+                <th class="table__heading table-heading">
+                  <a href="#" class="table-heading__link">
+                    <span class="table-heading__text">Cron Format</span>
+                    <i class="fas fa-exchange-alt table-heading__icon"></i>
+                  </a>
+                </th>
+                <th class="table__heading table-heading">
+                  <span class="table-heading__text"></span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__content table-content">
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Office</td>
+                <td data-label="Target Name" class="table-content__item">Lab Office</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Google</td>
+                <td data-label="Target Name" class="table-content__item">Lab Google</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Office</td>
+                <td data-label="Target Name" class="table-content__item">Lab Office</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Google</td>
+                <td data-label="Target Name" class="table-content__item">Lab Google</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--on table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Office</td>
+                <td data-label="Target Name" class="table-content__item">Lab Office</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--on table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Google</td>
+                <td data-label="Target Name" class="table-content__item">Lab Google</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Office</td>
+                <td data-label="Target Name" class="table-content__item">Lab Office</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Google</td>
+                <td data-label="Target Name" class="table-content__item">Lab Google</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--off table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Office</td>
+                <td data-label="Target Name" class="table-content__item">Lab Office</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--on table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="table-content__row">
+                <td data-label="Source Name" class="table-content__item">Lab Google</td>
+                <td data-label="Target Name" class="table-content__item">Lab Google</td>
+                <td data-label="Cron Format" class="table-content__item">* * 3 * *</td>
+                <td data-label="" class="table-content__item">
+                  <button class="button switch-btn switch-btn--on table-content__switch-btn">
+                    <span class="switch-btn__circle"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="page-navigation galsync-data__page-navigation">
+            <div class="page-navigation__showed-results">
+              Showing 1 to 10 of 57 entries
+            </div>
+            <ul class="page-navigation__navigation-links navigation-links">
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__link--inactive navigation-links__previous">Previous</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__link--active navigation-links__page-number">1</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__page-number">2</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__page-number">3</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__page-number">4</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__page-number">5</a>
+              </li>
+              <li class="navigation-links__item">
+                <a href="#" class="navigation-links__link navigation-links__next">Next</a>
+              </li>
+            </ul>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <div class="popup actions-popup synchronize-popup">
+      <div class="popup__window popup-window synchronize-popup__window">
+        <div class="popup-window__header">
+          <div class="popup-window__title synchronize-popup__title popup-window-title">
+            <img src="img/info-icon.png" alt="Icon" class="popup-window-title__icon">
+            <span class="popup-window-title__text">Information</span>
+          </div>
+          <button class="button popup-window-close"></button>
+        </div>
+  
+        <div class="popup-window__content synchronize-popup__window-content">
+          <div class="synchronize-popup__text">Warning! This action will alter target tenant data from Cloudiway’s servers. <br> 
+            Be aware of your action.
+          </div>
+          <div class="synchronize-popup__buttons">
+            <button class="button popup__button blue-btn synchronize-popup__push-btn">Start push data</button>
+            <button class="button popup__button synchronize-popup__cancel-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup actions-popup gather-popup">
+      <div class="popup__window popup-window gather-popup__window">
+        <div class="popup-window__header">
+          <div class="popup-window__title gather-popup__title popup-window-title">
+            <img src="img/info-icon.png" alt="Icon" class="popup-window-title__icon">
+            <span class="popup-window-title__text">Information</span>
+          </div>
+          <button class="button popup-window-close"></button>
+        </div>
+  
+        <div class="popup-window__content synchronize-popup__window-content">
+          <div class="synchronize-popup__text">
+            This action will gather datas from source and target then simulate the of push to list differences. <br> 
+            Nothing will be altered on your tenants. <br>
+            This action is asynchronous as it might takes time.
+          </div>
+          <div class="gather-popup__buttons">
+            <button class="button popup__button blue-btn gather-popup__new-simulation-btn">Start new simulation</button>
+            <button class="button popup__button blue-btn gather-popup__previous-btn">Open previous simulation</button>
+            <button class="button popup__button synchronize-popup__cancel-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

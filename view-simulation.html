@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Cloudiway</title>
+
+	<meta name="description" content="">
+
+	<!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="user-scalable=1, width=device-width">
+
+	<!-- Turn off "smart" recognition phone number -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Style sheet link -->
+	<link type="text/css" href="css/main.css" rel="stylesheet" media="all">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__left-block">
+          <button class="header__sidebar-toggle-btn sidebar-toggle-btn">
+            <span class="sidebar-toggle-btn__icon"></span>
+          </button>
+          <div class="header__logo header__logo--margin">
+            <a href="#">
+              <img src="img/logo.png" alt="Logo">
+            </a>
+          </div>
+        </div>
+        <div class="header__user-block header__user-block--right-sided user-block">
+          <div class="user-block__user-links user-links">
+            <a href="#" class="user-links__item">Buy</a>
+            <a href="#" class="user-links__item user-links__item--left-margin">Help</a>
+          </div>
+          <div class="user-block__notification user-block__notification--left-margin notification">
+            <a href="#" class="notification__item notification__item--has-notifications">
+              <img src="img/bell-icon.svg" alt="Notification">
+            </a>
+          </div>
+          <div class="user-block__settings user-block__settings--left-margin">
+            <a href="#">
+              <img src="img/settings-icon.svg" alt="Settings">
+            </a>
+          </div>
+          <a href="#" class="user-block__user-info user-block__user-info--left-margin user-info">
+            <img class="user-info__avatar" src="img/avatar.png" alt="User Avatar">
+            <div class="user-info__user-name user-info__user-name--left-margin user-name">
+              <span class="user-name__item">Ross Thornell <i class="fas fa-angle-down"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div class="sidebar">
+        <ul class="sidebar__navigation sb-navigation">
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link sb-navigation__link--active">
+              <img src="img/project-selector-icon.png" alt="icon" class="sb-navigation__icon">
+              Project Selector
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/actions-icon.png" alt="icon" class="sb-navigation__icon">
+              Actions
+              </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/galsync-data-icon.png" alt="icon" class="sb-navigation__icon">
+              Galsync Data
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/history-icon.png" alt="icon" class="sb-navigation__icon">
+              History
+            </a>
+          </li>
+          <li class="sb-navigation__item">
+            <a href="#" class="sb-navigation__link">
+              <img src="img/configuration-icon.png" alt="icon" class="sb-navigation__icon">
+              Configuration
+            </a>
+          </li>
+        </ul>
+      
+        <footer class="footer footer--padding">
+        	<span class="footer__text">Copyright © 2018 Cloudiway.</span>
+        	<span class="footer__text">All Rights Reserved.</span>
+        
+        	<div class="all_pages">
+        		<div class="page_point">Pages</div>
+        		<ul class="page_list">
+        			<li><a href="index.html">Index</a></li>
+        			<li><a href="project-selector.html">Project Selector</a></li>
+        			<li><a href="project-create-new.html">Project Create New</a></li>
+        			<li><a href="config.html">Config</a></li>
+        			<li><a href="config-account.html">Config Account</a></li>
+        			<li><a href="config-add-new-connector.html">Config Add New Connector</a></li>
+        			<li><a href="history.html">History</a></li>
+        			<li><a href="history-job-information.html">History Job Information</a></li>
+        			<li><a href="history-job-detailed.html">History Job Detailed</a></li>
+        			<li><a href="view-simulation.html">View Simulation</a></li>
+        			<li><a href="galsync-data.html">Galsync Data</a></li>
+        			<li><a href="actions.html">Actions</a></li>
+        			<li><a href="config-account-settings.html">Config Account Setting</a></li>
+        			<li><a href="config-add-filters.html">Config Add filters</a></li>
+        		</ul>
+        	</div>
+        </footer>
+      </div>
+      <div class="content">
+        <div class="message-box hidden">
+          <button class="message-box__close-button button"><i class="fas fa-times"></i></button>
+          <span class="message-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus aliquet dignissim. Etiam luctus porta diam, eu tristique massa dignissim nec.</span>
+          <button class="message-box__confirm-button button">Confirm</button>
+        </div>
+        <div class="content__inner">
+          <div class="page-info">
+            <div class="page-info__title">View Simulation</div>
+            <div class="page-info__breadcrumbs breadcrumbs">
+              <a href="#" class="breadcrumbs__item">Home</a>
+              <i class="fas fa-angle-right breadcrumbs__item breadcrumbs__icon"></i>
+              <a href="#" class="breadcrumbs__item">Job History</a>
+              <i class="fas fa-angle-right breadcrumbs__item breadcrumbs__icon"></i>
+              <a href="#" class="breadcrumbs__item">View Simulation</a>
+            </div>
+          </div>
+
+          <div class="view-simulation-blocks">
+            <div class="view-simulation-left-block">
+  
+              <div class="box-container view-simulation-select-target">
+                <div class="view-simulation-select-target__source">
+                  <div class="view-simulation-select-target__label">Source</div>
+                  <select name="Select Source" id="simulation-source" class="view-simulation-select-target__select-source custom-select">
+                    <option value="Lab Google 1">Lab Google 1</option>
+                    <option value="Lab Google 2">Lab Google 2</option>
+                  </select>
+                </div>
+                <div class="view-simulation-select-target__target">
+                  <div class="view-simulation-select-target__label">Target</div>
+                  <select name="Select Source" id="simulation-target" class="view-simulation-select-target__select-target custom-select">
+                    <option value="Lab Google 1">Lab Google 1</option>
+                    <option value="Lab Google 2">Lab Google 2</option>
+                  </select>
+                </div>
+              </div>
+  
+              <div class="page-subtitle">
+                <span class="page-subtitle__text">Attributes</span>
+              </div>
+
+              <table class="table view-simulation-table view-simulation-block__view-simulation-table">
+                <thead class="table__header">
+                  <tr>
+                    <th class="table__heading table-heading view-simulation-table__table-heading">
+                      <a href="#" class="table-heading__link">
+                        <span class="table-heading__text">Property Name</span>
+                        <i class="fas fa-sort-alpha-down table-heading__icon"></i>
+                      </a>
+                    </th>
+                    <th class="table__heading table-heading view-simulation-table__table-heading">
+                      <a href="#" class="table-heading__link">
+                        <span class="table-heading__text">New Value</span>
+                        <i class="fas fa-exchange-alt table-heading__icon"></i>
+                      </a>
+                    </th>
+                    <th class="table__heading table-heading view-simulation-table__table-heading">
+                      <a href="#" class="table-heading__link">
+                        <span class="table-heading__text">Old Value</span>
+                        <i class="fas fa-exchange-alt table-heading__icon"></i>
+                      </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="table__content table-content">
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Lorem Ipsum</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Ut in tellus</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Phasellus diam nunc</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Suspendisse</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Mauris finibus</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Diam nunc</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Phasellus diam nunc</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Suspendisse</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Mauris finibus</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Property Name" class="table-content__item">Diam nunc</td>
+                    <td data-label="New Value" class="table-content__item"></td>
+                    <td data-label="Old Value" class="table-content__item"></td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <div class="page-navigation view-simulation__page-navigation">
+                <div class="page-navigation__showed-results">
+                  Showing 1 to 10 of 57 entries
+                </div>
+                <ul class="page-navigation__navigation-links navigation-links">
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__link--inactive navigation-links__previous">Previous</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__link--active navigation-links__page-number">1</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">2</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">3</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">4</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">5</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__next">Next</a>
+                  </li>
+                </ul>
+              </div>
+                
+            </div>
+  
+            <div class="view-simulation-right-block">
+              <div class="box-container view-simulation-target-box">
+                <div class="page-subtitle box-container__page-subtitle">
+                  <span class="page-subtitle__text">Target</span>
+                </div>
+              </div>
+    
+              <div class="page-subtitle">
+                <span class="page-subtitle__text">Attributes</span>
+              </div>
+
+              <table class="table view-simulation-table">
+                <thead class="table__header">
+                  <tr>
+                    <th class="table__heading table-heading">
+                      <a href="#" class="table-heading__link">
+                        <span class="table-heading__text">Username</span>
+                        <i class="fas fa-sort-alpha-down table-heading__icon"></i>
+                      </a>
+                    </th>
+                    <th class="table__heading table-heading">
+                      <a href="#" class="table-heading__link">
+                        <span class="table-heading__text">User Email</span>
+                        <i class="fas fa-exchange-alt table-heading__icon"></i>
+                      </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="table__content table-content">
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Anthony Thompson</td>
+                    <td data-label="User Email" class="table-content__item">anthony@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Nicole Asmus</td>
+                    <td data-label="User Email" class="table-content__item">nicole@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Gary McGowan</td>
+                    <td data-label="User Email" class="table-content__item">gary@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Anthony Thompson</td>
+                    <td data-label="User Email" class="table-content__item">anthony@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Nicole Asmus</td>
+                    <td data-label="User Email" class="table-content__item">nicole@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Gary McGowan</td>
+                    <td data-label="User Email" class="table-content__item">gary@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Anthony Thompson</td>
+                    <td data-label="User Email" class="table-content__item">anthony@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Nicole Asmus</td>
+                    <td data-label="User Email" class="table-content__item">nicole@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Gary McGowan</td>
+                    <td data-label="User Email" class="table-content__item">gary@mail.com</td>
+                  </tr>
+                  <tr class="table-content__row">
+                    <td data-label="Username" class="table-content__item" style="width: 50%;">Gary McGowan</td>
+                    <td data-label="User Email" class="table-content__item">gary@mail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <div class="page-navigation view-simulation__page-navigation">
+                <div class="page-navigation__showed-results"></div>
+                <ul class="page-navigation__navigation-links navigation-links">
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__link--inactive navigation-links__previous">Previous</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__link--active navigation-links__page-number">1</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">2</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">3</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">4</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__page-number">5</a>
+                  </li>
+                  <li class="navigation-links__item">
+                    <a href="#" class="navigation-links__link navigation-links__next">Next</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
